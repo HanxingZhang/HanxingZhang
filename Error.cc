@@ -1,4 +1,5 @@
 #include "Error.hh"
+<<<<<<< HEAD
 #include "Bitmap.hh"
 
 virtual double Radar(double x, double y,double theta)const {
@@ -63,4 +64,15 @@ virtual double Getdirect(double dest) const {};//
 friend double operator -(const Error& a1,const Error& a2){};
 virtual bool safeDist(Error a) const {};//bool the Nx,Ny and x, y. discussing
 virtual double Correct(Error a) const {};// Correct the trace.
+=======
+
+virtual double RadarX(double x, double y)const {};
+virtual double Gps(double x, double y)const {};
+virtual double Sounder(double x, double y)const {};
+virtual double GetLoc(double x, double y, double Nx, double Ny)const {};
+virtual double Getdirect(double dest) const {};
+friend double operator -(const Error& a1,const Error& a2){};
+virtual bool safeDist(Error a) const {};
+virtual double Correct(Error a) const {};
+>>>>>>> origin/master
 };
